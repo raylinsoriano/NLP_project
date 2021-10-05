@@ -5,7 +5,9 @@ Allison Gao, Meaghan Ross, Raylin Soriano
 
 # Business Understanding
 
-The stakeholder...
+
+This analysis used over 9,000 Tweets on Apple and Google product to build an NLP model to analyze consumer sentiment. 
+The purpose of the analysis is to provide actionable recommendations for a client seeking to purchase a consumer sentiment tool that is able to detect product sentiment based on Tweets. Our analysis shows XYZ. Clients interested in detecting product sentiment for purposes of market segmentation can use this project’s findings to inform its business decision. 
 
 # Data & Methodology
 
