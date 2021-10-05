@@ -11,10 +11,10 @@ The purpose of the analysis is to provide actionable recommendations for a clien
 
 # Data & Methodology
 
-Data Source
+## Data Source
 The dataset comes from CrowdFlower via data.world.
 
-Data Shape
+## Data Shape
 The entire raw dataset contains 9094 rows and 3 columns. Each row represents a Tweet while each column specifies a feature. The columns are content of the tweet, what type of emotion was detected based on the Tweet, and what company the Tweet was directed at. Human raters rated the sentiment in over 9,000 Tweets as positive, negative, no emotion detected, or “I can’t tell”. 
 
 This is a highly imbalanced dataset. Close to 60% of the Tweets were labeled as no emotion, 32% were associated with positive emotion, 6% were associated with negative emotions, and 1.7% were labeled as “I can’t tell”. 
