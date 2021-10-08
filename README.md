@@ -31,7 +31,7 @@ This is a highly imbalanced dataset. Close to 60% of the tweets were labeled as 
 
 * This graph below shows the distribution of the length of both postive and negative tweets. Looking at the graph it shows that the length of the tweet does not impact on whether a tweet will be labeled as positive, negative or no emotion based on its length.
 
-<img width="843" alt="Screen Shot 2021-10-07 at 2 57 04 PM" src="https://user-images.githubusercontent.com/40476299/136446447-707d62d8-8382-48b9-a706-cce6f3dad900.png">
+<img src="images/tweet_length.png"><br>
 
 
 ## Final Model
