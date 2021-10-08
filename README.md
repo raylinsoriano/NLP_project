@@ -24,21 +24,21 @@ This is a highly imbalanced dataset. Close to 60% of the tweets were labeled as 
 
 Since this dataset's tweets came from the South by Southwest event, several words like #SXSW and iPad appeared in all three emotion groups in the target variable. As a result, we wanted to pull the unique words from the positive and negative emotion groups for exploratory analysis. 
 
-* This word cloud shows the unique words found from postive tweets from our data.
+* This word cloud shows the unique words found from positive tweets from our data.
 
 <img src="images/positive_tweets.png"><br>
 * This word cloud shows the unique words found from negative tweets from our data.
 
 <img src="images/negative_tweets.png"><br>
 
-* This graph below shows the distribution of the length of both postive and negative tweets. Looking at the graph it shows that the length of the tweet does not impact on whether a tweet will be labeled as positive, negative or no emotion based on its length.
+* This graph below shows the distribution of the length of both positive and negative tweets. Looking at the graph it shows that the length of the tweet does not impact on whether a tweet will be labeled as positive, negative or no emotion based on its length.
 
 <img src="images/tweet_length.png"><br>
 ## Modeling
 <img src="images/model_iterations.png"><br>
 
 We used accuracy and precision as our two key metrics to evaluate our models. In particular, we focused on increasing the precision score. We want our model to correctly identify true emotions within each class while minimizing the false positives. 
-For our baseline model, we used a CountVectorizer and a Multinomial Naive Bayes, which gave us 67% in accuracy and 65 in precision. We then moved to using Tf-Idf Vectorizer with the rest of the four models.  As an effort to increase our key metric’s score, we tried out different tuning options on logistic regression, random forest, and XGBoost. At the end of our iteration process, we could not increase our accuracy and precision scores. 
+For our baseline model, we used a CountVectorizer and a Multinomial Naive Bayes, which gave us 67% in accuracy and 65% in precision. We then moved to using Tf-Idf Vectorizer with the rest of the four models.  As an effort to increase our key metric’s score, we tried out different tuning options on logistic regression, random forest, and XGBoost. At the end of our iteration process, we could not increase our accuracy and precision scores. 
 
 As shown on the table, logistic regression produced the lowest accuracy and precision score while Multinomial Naive Bayes produced the highest precision score. 
 
@@ -51,7 +51,7 @@ As shown on the table, logistic regression produced the lowest accuracy and prec
 * Finally, the data and their TF-IDF scores were put through a Multinomial Naive Bayes model to predict the sentiment of the original tweet.
 
 #### Results
-The final model has a **Accuracy Score of 66%** and a **Macro Precision Score of 70%**.
+The final model has an **Accuracy Score of 66%** and a **Macro Precision Score of 70%**.
 
 <img src="images/final_model_cm.png"><br>
 
@@ -63,7 +63,7 @@ The final model has a **Accuracy Score of 66%** and a **Macro Precision Score of
 ## Next Steps
 * We would like to include deep-learning such as Word2Vec to help create more precise models. 
 
-* Include the the tweets classified as "I can't tell" to better prepare prepare for unseen data.
+* Include the tweets classified as "I can't tell" to better prepare for unseen data.
 
 ## For More Information
 See the full analysis in the [Jupyter Notebook](Final_Notebook.ipynb) or review [this presentation](Twitter_Sentiment_Analysis.pdf).
