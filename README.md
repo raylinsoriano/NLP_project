@@ -12,9 +12,7 @@ The purpose of the analysis is to provide actionable recommendations for a clien
 ## Data & Methodology
 
 #### Data Source
-The dataset comes from CrowdFlower via data.world. 
-
-https://data.world/crowdflower/brands-and-product-emotions
+The dataset comes from CrowdFlower via data.world found [here](https://data.world/crowdflower/brands-and-product-emotions).
 
 #### Data Shape
 The entire raw dataset contains 9094 rows and 3 columns. Each row represents a Tweet while each column specifies a feature. The threee column are content of the tweet, what type of emotion was detected based on the Tweet, and what company the Tweet was directed at. Human raters rated the sentiment in over 9,000 Tweets as positive, negative, no emotion detected, or “I can’t tell”. 
