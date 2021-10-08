@@ -45,7 +45,8 @@ This is a highly imbalanced dataset. Close to 60% of the tweets were labeled as 
 * After performing a train-test split, the tweet text and the target were then loaded into a model pipeline that included a TF-IDF vectorizer, followed by SMOTE to slightly oversample the negative emotion class. 
 * Finally, the data and their TF-IDF scores were put through a Multinomial Naive Bayes model to predict the sentiment of the original tweet.
 
-It has a **Accuracy Score of 66%** and a **Macro Precision Score of 70%**.
+#### Results
+The final model has a **Accuracy Score of 66%** and a **Macro Precision Score of 70%**.
 
 <img width="509" alt="Screen Shot 2021-10-07 at 2 57 27 PM" src="https://user-images.githubusercontent.com/40476299/136446470-f3e0b9fb-1486-4525-9ccb-5fc601ca5d6e.png">
 
