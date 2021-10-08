@@ -57,7 +57,7 @@ The final model has an **Accuracy Score of 66%** and a **Macro Precision Score o
 
 
 ## Conclusion
-* Per our business problem, we believe Samsung should implement the text preprocessing and model pipeline with Multinomial Bayes as it is the best overall model for taking in text from tweets and precisely categorizing the sentiment of the tweet.  
+* Per our business problem, we believe Samsung should implement the Multinomial Bayes model using Tf-Idf Vectorizer and SMOTE as it is the best overall model for taking in text from tweets and precisely categorizing the sentiment.  
 * Samsung could avoid using costly human coders in the process of sentiment analysis by using this model to correctly predict tweet sentiment.  
 
 ## Next Steps
