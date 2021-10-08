@@ -74,13 +74,13 @@ Raylin Soriano: sorianoraylin@gmail.com <br />
 
 ## Project Structure
 ```
-├── data
-├── images
 ├── Individuals Notebooks       <--- Directory for individual workspaces
 │   ├── allison
 │   ├── meaghan
 │   ├── raylin
 │   
+├── data
+├── images
 ├── README.md
 ├── Twitter_Sentiment_Analysis.pdf   
 ├── Final_Notebook.ipynb     
