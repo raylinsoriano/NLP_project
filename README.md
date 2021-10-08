@@ -4,7 +4,7 @@ Allison Gao, Meaghan Ross, Raylin Soriano
 ![image-1](https://cdn.analyticsvidhya.com/wp-content/uploads/2018/07/performing-twitter-sentiment-analysis1.jpg) <br />
 
 ## Overview
-We built a project using Natural Language Processing (NLP) baseline to analyze consumer sentiment from tweets from the SXSW conference where they were announcing the new Ipad2.
+We built a project using Natural Language Processing (NLP) baseline to analyze consumer sentiment from tweets from the SXSW conference where they were announcing the new iPad2.
 
 ## Business Problem
 The purpose of the analysis is to provide actionable recommendations for our client Samsung seeking to purchase a consumer sentiment tool that is able to detect product sentiment based on tweets. Clients interested in detecting product sentiment for purposes of market segmentation can use this project’s findings to inform its business decision. 
