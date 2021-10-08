@@ -37,6 +37,11 @@ Since this dataset's tweets came from the South by Southwest event, several word
 ## Modeling
 <img src="images/model_iterations.png"><br>
 
+We used accuracy and precision as our two key metrics to evaluate our models. In particular, we focused on increasing the precision score. We want our model to correctly identify true emotions within each class while minimizing the false positives. 
+For our baseline model, we used a CountVectorizer and a Multinomial Naive Bayes, which gave us 67% in accuracy and 65 in precision. We then moved to using Tf-Idf Vectorizer with the rest of the four models.  As an effort to increase our key metric’s score, we tried out different tuning options on logistic regression, random forest, and XGBoost. At the end of our iteration process, we could not increase our accuracy and precision scores. 
+
+As shown on the table, logistic regression produced the lowest accuracy and precision score while Multinomial Naive Bayes produced the highest precision score. 
+
 ## Final Model
 <img src="images/final_model_schema.png"><br>
 * Before modeling, the tweets were preprocessed. First, a TweetTokenizer was implemented to split the tweet text into words while keeping hashtags and handles intact. 
@@ -69,7 +74,7 @@ The final model has a **Accuracy Score of 66%** and a **Macro Precision Score of
 │   ├── meaghan
 │   ├── raylin
 │   
-├── Presentation.pdf   
-├── final.ipynb     
+├── Twitter_Sentiment_Analysis.pdf   
+├── Final_Notebook.ipynb     
 └── .gitignore
 ```
