@@ -38,7 +38,7 @@ This is a highly imbalanced dataset. Close to 60% of the tweets were labeled as 
 
 
 ## Final Model
-<img width="476" alt="Screen Shot 2021-10-07 at 3 04 11 PM" src="https://user-images.githubusercontent.com/40476299/136446852-d4569765-5728-434b-be65-81e9863c7975.png">
+<img src="images/final_model_schema.png"><br>
 * Before modeling, the tweets were preprocessed. First, a TweetTokenizer was implemented to split the tweet text into words while keeping hashtags and handles intact. 
 * Then the text was lowercased and stop words were removed. 
 * In the last step of preprocessing the text was put through a lemmatization process to convert words to their base forms using their part of speech. 
