@@ -24,13 +24,10 @@ This is a highly imbalanced dataset. Close to 60% of the tweets were labeled as 
 
 * This word cloud shows the unique words found from postive tweets from our data.
 
-<img width="476" alt="Screen Shot 2021-10-07 at 3 04 11 PM" src="https://user-images.githubusercontent.com/40476299/136446852-d4569765-5728-434b-be65-81e9863c7975.png">
-
-
+<img src="images/positive_tweets.png"><br>
 * This word cloud shows the unique words found from negative tweets from our data.
 
-<img width="472" alt="Screen Shot 2021-10-07 at 2 56 40 PM" src="https://user-images.githubusercontent.com/40476299/136446922-4e249163-7bc0-4b2c-91ca-a2acd35eb087.png">
-<br>
+<img src="images/negative_tweets.png"><br>
 
 * This graph below shows the distribution of the length of both postive and negative tweets. Looking at the graph it shows that the length of the tweet does not impact on whether a tweet will be labeled as positive, negative or no emotion based on its length.
 
@@ -48,7 +45,7 @@ This is a highly imbalanced dataset. Close to 60% of the tweets were labeled as 
 #### Results
 The final model has a **Accuracy Score of 66%** and a **Macro Precision Score of 70%**.
 
-<img width="509" alt="Screen Shot 2021-10-07 at 2 57 27 PM" src="https://user-images.githubusercontent.com/40476299/136446470-f3e0b9fb-1486-4525-9ccb-5fc601ca5d6e.png">
+<img src="images/final_model_cm.png"><br>
 
 
 ## Conclusion
