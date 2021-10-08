@@ -65,15 +65,23 @@ The final model has a **Accuracy Score of 66%** and a **Macro Precision Score of
 
 * Include the the tweets classified as "I can't tell" to better prepare prepare for unseen data.
 
+## For More Information
+See the full analysis in the [Jupyter Notebook](Final_Notebook.ipynb) or review [this presentation](Twitter_Sentiment_Analysis.pdf).
+
+Allison Gao:  allison.gao@nyu.edu <br />
+Meaghan Ross: mer423@nyu.edu <br />
+Raylin Soriano: sorianoraylin@gmail.com <br />
+
 ## Project Structure
 ```
-├── README.md
+├── data
 ├── images
 ├── Individuals Notebooks       <--- Directory for individual workspaces
 │   ├── allison
 │   ├── meaghan
 │   ├── raylin
 │   
+├── README.md
 ├── Twitter_Sentiment_Analysis.pdf   
 ├── Final_Notebook.ipynb     
 └── .gitignore
