@@ -22,31 +22,37 @@ This is a highly imbalanced dataset. Close to 60% of the tweets were labeled as 
 
 ## EDA
 
+Since this dataset's tweets came from the South by Southwest event, several words like #SXSW and iPad appeared in all three emotion groups in the target variable. As a result, we wanted to pull the unique words from the positive and negative emotion groups for exploratory analysis. 
+
 * This word cloud shows the unique words found from postive tweets from our data.
 
-<img width="476" alt="Screen Shot 2021-10-07 at 3 04 11 PM" src="https://user-images.githubusercontent.com/40476299/136446852-d4569765-5728-434b-be65-81e9863c7975.png">
-
-
+<img src="images/positive_tweets.png"><br>
 * This word cloud shows the unique words found from negative tweets from our data.
 
-<img width="472" alt="Screen Shot 2021-10-07 at 2 56 40 PM" src="https://user-images.githubusercontent.com/40476299/136446922-4e249163-7bc0-4b2c-91ca-a2acd35eb087.png">
-<br>
+<img src="images/negative_tweets.png"><br>
 
 * This graph below shows the distribution of the length of both postive and negative tweets. Looking at the graph it shows that the length of the tweet does not impact on whether a tweet will be labeled as positive, negative or no emotion based on its length.
 
-<img width="843" alt="Screen Shot 2021-10-07 at 2 57 04 PM" src="https://user-images.githubusercontent.com/40476299/136446447-707d62d8-8382-48b9-a706-cce6f3dad900.png">
+<img src="images/tweet_length.png"><br>
 
 
 ## Final Model
-We choose the Multinomial Naitve Bayes as our final model. 
+<img src="images/final_model_schema.png"><br>
+* Before modeling, the tweets were preprocessed. First, a TweetTokenizer was implemented to split the tweet text into words while keeping hashtags and handles intact. 
+* Then the text was lowercased and stop words were removed. 
+* In the last step of preprocessing the text was put through a lemmatization process to convert words to their base forms using their part of speech. 
+* After performing a train-test split, the tweet text and the target were then loaded into a model pipeline that included a TF-IDF vectorizer, followed by SMOTE to slightly oversample the negative emotion class. 
+* Finally, the data and their TF-IDF scores were put through a Multinomial Naive Bayes model to predict the sentiment of the original tweet.
 
-It has a **Accuracy Score of 66%** and a **Macro Precision Score of 70%**.
+#### Results
+The final model has a **Accuracy Score of 66%** and a **Macro Precision Score of 70%**.
 
-<img width="509" alt="Screen Shot 2021-10-07 at 2 57 27 PM" src="https://user-images.githubusercontent.com/40476299/136446470-f3e0b9fb-1486-4525-9ccb-5fc601ca5d6e.png">
+<img src="images/final_model_cm.png"><br>
 
 
 ## Conclusion
-We saw that our best model was the Multinomial Naive Bayes with the TF-IDF Vectorizor at dectecting tweet sentiment. 
+* Per our business problem, we believe Samsung should implement the text preprocessing and model pipeline with Multinomial Bayes as it is the best overall model for taking in text from tweets and precisely categorizing the sentiment of the tweet.  
+* Samsung could avoid using costly human coders in the process of sentiment analysis by using this model to correctly predict tweet sentiment.  
 
 ## Next Steps
 * We would like to include deep-learning such as Word2Vec to help create more precise models. 
@@ -56,6 +62,7 @@ We saw that our best model was the Multinomial Naive Bayes with the TF-IDF Vecto
 ## Project Structure
 ```
 ├── README.md
+├── images
 ├── Individuals Notebooks       <--- Directory for individual workspaces
 │   ├── allison
 │   ├── meaghan
