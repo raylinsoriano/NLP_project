@@ -22,6 +22,8 @@ This is a highly imbalanced dataset. Close to 60% of the tweets were labeled as 
 
 ## EDA
 
+Since this dataset's tweets came from the South by Southwest event, several words like #SXSW and iPad appeared in all three emotion groups in the target variable. As a result, we wanted to pull the unique words from the positive and negative emotion groups for exploratory analysis. 
+
 * This word cloud shows the unique words found from postive tweets from our data.
 
 <img src="images/positive_tweets.png"><br>
@@ -60,6 +62,7 @@ The final model has a **Accuracy Score of 66%** and a **Macro Precision Score of
 ## Project Structure
 ```
 ├── README.md
+├── images
 ├── Individuals Notebooks       <--- Directory for individual workspaces
 │   ├── allison
 │   ├── meaghan
