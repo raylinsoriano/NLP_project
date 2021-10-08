@@ -34,7 +34,8 @@ Since this dataset's tweets came from the South by Southwest event, several word
 * This graph below shows the distribution of the length of both postive and negative tweets. Looking at the graph it shows that the length of the tweet does not impact on whether a tweet will be labeled as positive, negative or no emotion based on its length.
 
 <img src="images/tweet_length.png"><br>
-
+## Modeling
+<img src="images/model_iterations.png"><br>
 
 ## Final Model
 <img src="images/final_model_schema.png"><br>
