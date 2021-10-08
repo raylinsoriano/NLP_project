@@ -46,7 +46,8 @@ It has a **Accuracy Score of 66%** and a **Macro Precision Score of 70%**.
 
 
 ## Conclusion
-We saw that our best model was the Multinomial Naive Bayes with the TF-IDF Vectorizor at dectecting tweet sentiment. 
+* Per our business problem, we believe Samsung should implement the text preprocessing and model pipeline with Multinomial Bayes as it is the best overall model for taking in text from tweets and precisely categorizing the sentiment of the tweet.  
+* Samsung could avoid using costly human coders in the process of sentiment analysis by using this model to correctly predict tweet sentiment.  
 
 ## Next Steps
 * We would like to include deep-learning such as Word2Vec to help create more precise models. 
