@@ -4,10 +4,10 @@ Allison Gao, Meaghan Ross, Raylin Soriano
 ![image-1](https://cdn.analyticsvidhya.com/wp-content/uploads/2018/07/performing-twitter-sentiment-analysis1.jpg) <br />
 
 ## Overview
-This analysis used over 9,000 tweets regarding the brands Apple and Google and their products to build a natural language processing (NLP) model to analyze consumer sentiment. 
+We built a project using Natural Language Processing (NLP) baseline to analyze consumer sentiment from tweets from the SXSW conference where they were announcing the new Ipad2.
 
 ## Business Problem
-The purpose of the analysis is to provide actionable recommendations for a client seeking to purchase a consumer sentiment tool that is able to detect product sentiment based on tweets. Clients interested in detecting product sentiment for purposes of market segmentation can use this project’s findings to inform its business decision. 
+The purpose of the analysis is to provide actionable recommendations for our client Samsung seeking to purchase a consumer sentiment tool that is able to detect product sentiment based on tweets. Clients interested in detecting product sentiment for purposes of market segmentation can use this project’s findings to inform its business decision. 
 
 ## Data & Methodology
 
@@ -16,7 +16,7 @@ The dataset comes from CrowdFlower via data.world found [here](https://data.wor
 The data was collected from twitter users attending the 2011 South by Southwest conferences and festivals.
 
 #### Data Shape
-The entire raw dataset contains 9094 rows and 3 columns. Each row represents a tweet while each column specifies a feature. The threee column are content of the tweet, what type of emotion was detected based on the Tweet, and what company the Tweet was directed at. Human raters rated the sentiment in over 9,000 Tweets as positive, negative, no emotion detected, or “I can’t tell”. 
+The entire raw dataset contains 9094 rows and 3 columns. Each row represents a tweet while each column specifies a feature. The three columns are content of the tweet, what type of emotion was detected based on the Tweet, and what company the Tweet was directed at. Human raters rated the sentiment in over 9,000 Tweets as positive, negative, no emotion detected, or “I can’t tell”. 
 
 This is a highly imbalanced dataset. Close to 60% of the tweets were labeled as no emotion, 32% were associated with positive emotion, 6% were associated with negative emotions, and 1.7% were labeled as “I can’t tell”. Given the small percentage of tweets labeled as unable to detect, we excluded these from our dataset, resulting in a three-class target variable. The three classes are positive emotion, negative emotion, and no emotion detect. 
 
