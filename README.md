@@ -38,7 +38,12 @@ This is a highly imbalanced dataset. Close to 60% of the tweets were labeled as 
 
 
 ## Final Model
-We choose the Multinomial Naitve Bayes as our final model. 
+<img width="476" alt="Screen Shot 2021-10-07 at 3 04 11 PM" src="https://user-images.githubusercontent.com/40476299/136446852-d4569765-5728-434b-be65-81e9863c7975.png">
+* Before modeling, the tweets were preprocessed. First, a TweetTokenizer was implemented to split the tweet text into words while keeping hashtags and handles intact. 
+* Then the text was lowercased and stop words were removed. 
+* In the last step of preprocessing the text was put through a lemmatization process to convert words to their base forms using their part of speech. 
+* After performing a train-test split, the tweet text and the target were then loaded into a model pipeline that included a TF-IDF vectorizer, followed by SMOTE to slightly oversample the negative emotion class. 
+* Finally, the data and their TF-IDF scores were put through a Multinomial Naive Bayes model to predict the sentiment of the original tweet.
 
 It has a **Accuracy Score of 66%** and a **Macro Precision Score of 70%**.
 
